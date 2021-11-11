@@ -65,3 +65,21 @@ nav {
 .nav-list li a {
     color: white;
 }
+/* header */
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+.hero-img {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+}
+.hero-heading {
+    font-size: 2rem;
+    padding-top: 2rem;
+    color: var(--dark-grey);
+}
+.hero-heading span {
+    color: var(--primary-color);
+}
