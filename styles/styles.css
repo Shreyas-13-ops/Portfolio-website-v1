@@ -21,10 +21,24 @@ a , li{/*remove styles*/
     text-align: center;
 }
 /* links */
-.primary-link, .secondary-link{
+.links li a {
+    color: white;
+}
+.links .secondary-link a {
+    color: var(--secondary-color);
+}
+.primary-link, .secondary-link {
     display: inline;
     padding: 1rem 1.5rem;
 }
-.primary-link{
-    
+.primary-link {
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+.secondary-link {
+    border: 2px solid #3B82F6;
+    border-radius: 1rem;
+}
+hr {
+    margin: 2rem;
 }
