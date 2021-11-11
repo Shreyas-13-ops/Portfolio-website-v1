@@ -9,3 +9,22 @@ body {
     --light-blue: #93C5FD;
     --dark-grey: #6B7280;
 }
+a , li{/*remove styles*/
+    text-decoration: none;
+    list-style: none;
+}
+/* containers */
+.container {
+    padding: 0 1rem;
+}
+.container-center{
+    text-align: center;
+}
+/* links */
+.primary-link, .secondary-link{
+    display: inline;
+    padding: 1rem 1.5rem;
+}
+.primary-link{
+    
+}
