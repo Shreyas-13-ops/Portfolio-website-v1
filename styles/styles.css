@@ -3,3 +3,9 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+:root {
+    --primary-color: #1D4ED8;
+    --secondary-color: #3B82F6;
+    --light-blue: #93C5FD;
+    --dark-grey: #6B7280;
+}
