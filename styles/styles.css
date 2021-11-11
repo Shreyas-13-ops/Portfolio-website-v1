@@ -8,6 +8,7 @@ body {
     --secondary-color: #3B82F6;
     --light-blue: #93C5FD;
     --dark-grey: #6B7280;
+    --off-white: #E5E7EB;
 }
 a , ul{/*remove styles*/
     text-decoration: none;
@@ -15,10 +16,11 @@ a , ul{/*remove styles*/
 }
 /* containers */
 .container {
-    padding: 0 1rem;
+    padding: 0rem 1rem;
 }
 .container-center{
-    text-align: center;
+    max-width: 600px;
+    margin: auto;
 }
 /* links */
 .links li a {
@@ -82,4 +84,14 @@ nav {
 }
 .hero-heading span {
     color: var(--primary-color);
+}
+/* sections */
+.section {
+    padding: 2rem;
+}
+.section h2 {
+    text-align: center;
+}
+.off-white-section {
+    background-color: var(--off-white);
 }
