@@ -9,7 +9,7 @@ body {
     --light-blue: #93C5FD;
     --dark-grey: #6B7280;
 }
-a , li{/*remove styles*/
+a , ul{/*remove styles*/
     text-decoration: none;
     list-style: none;
 }
@@ -41,4 +41,9 @@ a , li{/*remove styles*/
 }
 hr {
     margin: 2rem;
+}
+/* lists */
+.list-inline li{
+    display: inline;
+    padding: 1rem;
 }
