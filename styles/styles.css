@@ -27,7 +27,7 @@ a , ul{/*remove styles*/
 .links .secondary-link a {
     color: var(--secondary-color);
 }
-.primary-link, .secondary-link {
+.primary-link, .secondary-link, .common-links{
     display: inline;
     padding: 1rem 1.5rem;
 }
@@ -46,4 +46,22 @@ hr {
 .list-inline li{
     display: inline;
     padding: 1rem;
+}
+/* navigation */
+nav {
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 1rem;
+    padding: 2rem;
+}
+.nav-name {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+}
+.nav-list {
+    text-align: right;
+    
+}
+.nav-list li a {
+    color: white;
 }
