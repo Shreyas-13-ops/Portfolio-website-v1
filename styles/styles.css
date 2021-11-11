@@ -10,7 +10,7 @@ body {
     --dark-grey: #6B7280;
     --off-white: #E5E7EB;
 }
-a , ul{/*remove styles*/
+a , ul, .list-inline{/*remove styles*/
     text-decoration: none;
     list-style: none;
 }
@@ -94,4 +94,17 @@ nav {
 }
 .off-white-section {
     background-color: var(--off-white);
+}
+/* footer */
+footer {
+    background-color: var(--secondary-color);
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    }
+footer .social-links a{
+    color: white;
+}
+footer .social-links {
+    padding-inline-start: 0px;
 }
