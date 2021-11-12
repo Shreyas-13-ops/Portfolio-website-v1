@@ -53,7 +53,7 @@ hr {
 /* navigation */
 nav {
     background-color: var(--primary-color);
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 2rem;
     padding: 2rem;
 }
 .nav-name {
