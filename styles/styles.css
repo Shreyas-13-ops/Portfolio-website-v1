@@ -29,29 +29,28 @@ a , ul, .list-inline{/*remove styles*/
     text-decoration: overline 2px;
     font-weight: bold;
 }
-.links li {
-    /* for space between buttons */
-    margin: 5px; 
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.links li a {
-    color: white;
-}
-.links .secondary-link a {
-    color: var(--primary-color);
-}
-.primary-link, .secondary-link, .common-links{
+.link-primary, .link-secondary, .common-links{
     display: inline;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
 }
-.primary-link {
+.link-primary {
     background-color: var(--primary-color);
     border-radius: 5rem;
-    padding: 1.2rem 2rem;
+    color: white;
+    /* for space between 2 links */
+    margin-right: 1rem; 
 }
-.secondary-link {
+.link-secondary {
     border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 5rem;
 }
+
 hr {
     margin: 2rem;
 }
