@@ -37,6 +37,7 @@ a , ul, .list-inline{/*remove styles*/
 .primary-link {
     background-color: var(--primary-color);
     border-radius: 1rem;
+    padding: 1.2rem 2rem;
 }
 .secondary-link {
     border: 2px solid #3B82F6;
