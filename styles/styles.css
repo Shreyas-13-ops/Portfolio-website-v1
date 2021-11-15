@@ -16,7 +16,7 @@ a , ul, .list-inline{/*remove styles*/
     text-decoration: none;
     list-style: none;
 }
-ul {
+ul, ol {
     line-height: 2rem;
 }
 /* containers */
