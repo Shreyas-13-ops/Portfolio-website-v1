@@ -16,6 +16,9 @@ a , ul, .list-inline{/*remove styles*/
     text-decoration: none;
     list-style: none;
 }
+ul {
+    line-height: 2rem;
+}
 /* containers */
 .container {
     padding: 0rem 1rem;
