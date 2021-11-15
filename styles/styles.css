@@ -16,8 +16,8 @@ a , ul, .list-inline{/*remove styles*/
     text-decoration: none;
     list-style: none;
 }
-ul, ol {
-    line-height: 2rem;
+ul, ol, p {
+    line-height: 1.6rem;
 }
 /* containers */
 .container {
