@@ -18,8 +18,6 @@ a , ul, .list-inline{/*remove styles*/
 }
 ul, ol {
     line-height: 2rem;
-    /* list-style-image: url(download.svg); */
-    list-style-type: square;
 }
 /* containers */
 .container {
