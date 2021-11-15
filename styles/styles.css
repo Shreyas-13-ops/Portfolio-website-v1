@@ -105,6 +105,7 @@ nav {
 }
 .off-white-section {
     background-color: var(--off-white);
+    border-radius: 1rem;
 }
 /* footer */
 footer {
