@@ -14,7 +14,7 @@ body {
 }
 main{
     margin: 0px auto;
-    max-width: 1000px;
+    width: 70%;
 }
 a , ul, .list-inline{/*remove styles*/
     text-decoration: none;
