@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0px auto;
-    max-width: 1000px;
+    font-size: large;
+    margin: 0px;
 }
 :root {
     --primary-color: #1D4ED8;
@@ -11,6 +11,10 @@ body {
     --light-blue: #93C5FD;
     --dark-grey: #6B7280;
     --off-white: #E5E7EB;
+}
+main{
+    margin: 0px auto;
+    max-width: 1000px;
 }
 a , ul, .list-inline{/*remove styles*/
     text-decoration: none;
@@ -29,8 +33,9 @@ ul, ol, p {
 }
 /* links */
 .link-active {
-    text-decoration: overline 2px;
     font-weight: bold;
+    border-bottom: 1px solid var(--off-white);
+    letter-spacing: 2px;
 }
 .links {
     display: flex;
@@ -65,13 +70,13 @@ hr {
 /* navigation */
 nav {
     background-color: var(--primary-color);
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    /* border-bottom-left-radius: 0.5rem; */
+    /* border-bottom-right-radius: 0.5rem; */
     padding: 0.7rem 2rem;
 }
 .nav-name {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: white;
 }
 .nav-list {
@@ -99,6 +104,9 @@ nav {
 .hero-heading span {
     color: var(--primary-color);
 }
+.hero-heading small{
+    font-size: 1.3rem;
+}
 /* sections */
 .section {
     padding: 2rem;
@@ -113,20 +121,31 @@ nav {
 /* footer */
 footer {
     background-color: var(--secondary-color);
+
     padding: 0rem 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-top: 5rem;
+
     text-align: center;
     color: white;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
+    
+    /* border-top-right-radius: 2rem; */
+    /* border-top-left-radius: 2rem; */
     }
+footer .social-links {
+    padding-inline-start: 0px;
+}
 footer .social-links a{
     color: white;
 }
-footer .social-links {
-    padding-inline-start: 0px;
+footer ul li{
+    padding: 0px;
+}
+footer ul li:hover{
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    cursor: pointer;
 }
 .footer-header {
     font-weight: bolder;
