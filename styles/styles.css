@@ -3,19 +3,18 @@
 * {
   box-sizing: border-box;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: large;
-  margin: 0px;
-}
 :root {
   --primary-color: #1d4ed8;
   --secondary-color: #3b82f6;
   --light-blue: #93c5fd;
   --dark-grey: #6b7280;
   --light-grey: #e5e7eb;
-  --off-white: #F1EDFF;
+  --off-white: #f1edff;
   --yellow-color: #ffe162;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
 }
 main {
   margin: 0px auto;
@@ -87,6 +86,7 @@ hr {
 nav {
   background-color: var(--primary-color);
   padding: 0.7rem 2rem;
+  width: 100%;
 }
 .nav-name {
   font-weight: bold;
@@ -106,7 +106,6 @@ nav {
 /* header */
 .hero {
   padding: 4rem;
-  text-align: center;
 }
 .hero-img {
   display: block;
@@ -140,7 +139,7 @@ nav {
 .author-work {
   font-weight: 500;
 }
-.hero-heading small {
+.author-bio {
   font-size: 1.3rem;
 }
 /* sections */
@@ -192,7 +191,7 @@ footer ul li:hover a {
   letter-spacing: 0.1rem;
 }
 
-/* MEDIA QUERIES FOR 660 MAX */
+/* MEDIA QUERIES FOR 695 MAX */
 @media screen and (max-width: 695px) {
   nav > div {
     display: none;
@@ -202,20 +201,79 @@ footer ul li:hover a {
     justify-content: center;
   }
 }
-/* MEDIA QUERIES FOR 320 MAX */
-@media screen and (max-width: 500px) {
-  .hero{
+
+/* MEDIA QUERIES FOR 630 MAX */
+@media screen and (max-width: 630px) {
+  .hero {
     padding: 0;
   }
-  .hero-img{
+  .hero-img {
     display: none;
   }
-  .author-bio{
+  .author-bio {
     display: inline-block;
     width: 350px;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
-  .section{
-    padding: 2rem .5rem;
+  .section {
+    padding: 2rem 0.5rem;
+  }
+}
+
+/* MEDIA QUERIES FOR 510 MAX */
+@media screen and (max-width: 510px) {
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    padding-left: 0;
+  }
+  /* can delete later below */
+  nav .common-links {
+    padding-left: 0;
+  }
+  .nav-list {
+    padding-left: 0;
+  }
+  /* can delete later above */
+  main {
+    margin: 1rem;
+    margin-top: 5rem;
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  /* Hero section begins */
+  .hero-heading {
+    font-size: 1.5rem;
+  }
+  .author-name {
+    font-size: 2rem;
+    padding: 0.7rem 0;
+  }
+  .author-work {
+    font-size: 1.3rem;
+  }
+  .author-bio {
+    font-size: 1.1rem;
+    max-width: 300px;
+  }
+  /* Hero section ends */
+
+  footer {
+    padding-left: 0;
+    margin-top: 0;
+  }
+  footer .social-links {
+    flex-direction: column;
+  }
+  footer ul li:hover a {
+    border-bottom: unset;
+  }
+  footer ul li a {
+    background: url(assets/share-black-icon-24dp.svg) 100% 0 no-repeat;
+    background-size: 15px 15px;
+    padding-right: 19px;
   }
 }
