@@ -239,10 +239,10 @@ footer ul li:hover a {
   }
   /* can delete later above */
   main {
-    margin: 1rem;
+    /* margin: 1rem; */
     margin-top: 5rem;
     font-size: 0.9rem;
-    width: 80%;
+    /* width: 80%; */
   }
   /* Hero section begins */
   .hero-heading {
@@ -257,12 +257,12 @@ footer ul li:hover a {
   }
   .author-bio {
     font-size: 1.1rem;
-    max-width: 300px;
+    max-width: 340px;
   }
   /* Hero section ends */
 
   footer {
-    padding-left: 0;
+    /* padding-left: 0; */
     margin-top: 0;
   }
   footer .social-links {
@@ -270,10 +270,5 @@ footer ul li:hover a {
   }
   footer ul li:hover a {
     border-bottom: unset;
-  }
-  footer ul li a {
-    background: url(assets/share-black-icon-24dp.svg) 100% 0 no-repeat;
-    background-size: 15px 15px;
-    padding-right: 19px;
   }
 }
