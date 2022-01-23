@@ -193,7 +193,7 @@ footer ul li:hover a {
 }
 
 /* MEDIA QUERIES FOR 660 MAX */
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 695px) {
   nav > div {
     display: none;
   }
@@ -204,64 +204,18 @@ footer ul li:hover a {
 }
 /* MEDIA QUERIES FOR 320 MAX */
 @media screen and (max-width: 500px) {
-  body {
-    width: 1050px;
-    margin: 0 auto;
+  .hero{
+    padding: 0;
   }
-  .nav-list {
-    display: flex;
-    justify-content: start;
-    margin: 0;
-    padding-left: 5vw;
+  .hero-img{
+    display: none;
   }
-  .nav-list li a {
-    font-size: 3.9vw;
+  .author-bio{
+    display: inline-block;
+    width: 350px;
+    margin-top: .5rem;
   }
-  /* MAIN */
-  main {
-    margin: 0;
-  }
-  .hero {
-    margin-left: 0;
-    padding: 0 0 0 1rem;
-  }
-  .hero-img {
-    display: block;
-    width: 100%;
-    margin: 2rem 0 0 0;
-  }
-  .hero-heading small {
-    display: block;
-    padding-top: 10px;
-    font-size: 4vw;
-    max-width: 30ch;
-    line-height: 1.8rem;
-  }
-  .author-name {
-    font-size: 8vw;
-  }
-  .section {
-    padding: 1rem 0.5rem;
-    border-radius: 0;
-  }
-  .section h2 {
-    text-align: left;
-    padding-left: 1.3rem;
-  }
-  .container-center {
-    width: 80vw;
-    margin: 2vw;
-  }
-  .links {
-    justify-content: start;
-    padding-left: 10rem;
-  }
-  footer {
-    margin-top: 1rem;
-    text-align: left;
-  }
-  .social-links {
-    display: flex;
-    flex-flow: column wrap;
+  .section{
+    padding: 2rem .5rem;
   }
 }
