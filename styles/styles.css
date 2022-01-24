@@ -94,7 +94,7 @@ nav {
 }
 .nav-name {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
 }
 .nav-list li a {
@@ -194,12 +194,9 @@ footer ul li:hover a {
 
 /* MEDIA QUERIES FOR 695 MAX */
 @media screen and (max-width: 695px) {
-  nav > div {
-    display: none;
-  }
-  .nav-list {
+  nav {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -229,10 +226,15 @@ footer ul li:hover a {
     right: 0;
     width: 100%;
     font-size: 0.8rem;
-    padding-left: 0;
+    padding-left: 2rem;
+    padding-bottom: 1.3rem;
+  }
+  .nav-list{
+    margin-top: 1.3rem;
+    padding: 0;
   }
   main {
-    margin-top: 5rem;
+    margin-top: 8rem;
     font-size: 0.9rem;
   }
   /* Hero section begins */
