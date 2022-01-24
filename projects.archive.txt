@@ -1,0 +1,30 @@
+<!-- header section -->
+<header class="hero">
+    <h2 class="hero-heading">My <span>Projects</span></h2>
+  </header>
+  <!-- projects display section -->
+  <!-- project-1 -->
+  <section class="section off-white-section">
+    <h2>Project 1</h2>
+    <div class="container container-center">
+      <p>My latest project details are here.</p>
+    </div>
+    <!-- buttons -->
+    <ul class="links">
+      <a href="#" class="link-primary">View project</a>
+      <a href="#" class="link-secondary">Source code</a>
+    </ul>
+  </section>
+  <!-- project-2 -->
+  <section class="section">
+    <h2>Project 2</h2>
+    <div class="container container-center">
+      <p>My seond latest project details are here</p>
+    </div>
+    <!-- buttons -->
+    <ul class="links">
+      <a href="#" class="link-primary">View project</a>
+      <a href="#" class="link-secondary">Source code</a>
+    </ul>
+  </section>
+  

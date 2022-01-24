@@ -121,15 +121,6 @@ nav {
   color: var(--dark-grey);
   text-align: left;
 }
-/* Projects page HTML */
-.projects-hero-heading {
-  font-size: 2.8rem;
-  font-weight: bold;
-}
-.projects-hero-heading span {
-  text-align: center;
-  color: var(--primary-color);
-}
 .author-name {
   color: var(--primary-color);
   display: block;
@@ -157,10 +148,9 @@ nav {
 /* footer */
 footer {
   background-color: var(--primary-color);
+  width: 100%;
 
-  padding: 0rem 3rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
   margin-top: 5rem;
 
   text-align: center;
@@ -190,6 +180,11 @@ footer ul li:hover a {
   font-size: large;
   word-spacing: 0.1rem;
   letter-spacing: 0.1rem;
+}
+.footer_credits{
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 1rem 0;
 }
 
 /* MEDIA QUERIES FOR 695 MAX */
