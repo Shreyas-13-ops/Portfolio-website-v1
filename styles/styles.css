@@ -87,14 +87,15 @@ nav {
   background-color: var(--primary-color);
   padding: 0.7rem 2rem;
   width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav-name {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
-}
-.nav-list {
-  text-align: right;
 }
 .nav-list li a {
   color: white;
@@ -230,19 +231,9 @@ footer ul li:hover a {
     font-size: 0.8rem;
     padding-left: 0;
   }
-  /* can delete later below */
-  nav .common-links {
-    padding-left: 0;
-  }
-  .nav-list {
-    padding-left: 0;
-  }
-  /* can delete later above */
   main {
-    /* margin: 1rem; */
     margin-top: 5rem;
     font-size: 0.9rem;
-    /* width: 80%; */
   }
   /* Hero section begins */
   .hero-heading {
@@ -262,7 +253,6 @@ footer ul li:hover a {
   /* Hero section ends */
 
   footer {
-    /* padding-left: 0; */
     margin-top: 0;
   }
   footer .social-links {
