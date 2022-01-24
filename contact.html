@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/projects.styles.css" />
+    <link rel="stylesheet" href="styles/contact.styles.css" />
     <title>Contact | Shreyas Pangal</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
         <!-- <li class="common-links">
           <a href="projects.html" title="Go to about">About</a>
         </li> -->
-        <li class="common-links ">
+        <li class="common-links">
           <a href="./projects.html" title="Go to projects">Projects</a>
         </li>
         <li class="common-links link-active">
@@ -30,7 +30,57 @@
         </li> -->
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <section id="contact" class="contact">
+        <p>LET'S HAVE A CHAT!</p>
+        <h2>CONTACT ME</h2>
+
+        <div class="form-input">
+          <form action="" method="post">
+            <p>
+              <label for="fullname">Full name:</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Joh Doe"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="abc@email.com"
+                required
+              />
+            </p>
+            <p>
+              <label for="message">Your message:</label>
+              <textarea
+                id="message"
+                name="message"
+                cols="30"
+                rows="3"
+                placeholder="Hey Shreyas, I would like to know about..."
+              ></textarea>
+            </p>
+            <button type="submit" class="btn-submit">SEND</button>
+          </form>
+        </div>
+
+        <!-- <aside>
+          <h5>Reach me on</h5>
+          <div class="social-handles">
+            <div id="linkedin"></div>
+            <div id="twitter"></div>
+            <div id="email"></div>
+          </div>
+        </aside> -->
+      </section>
+    </main>
     <!-- footer -->
     <footer>
       <p class="footer-header">Connect with me on:</p>
@@ -60,6 +110,9 @@
           >
         </li>
       </ul>
+      <div class="footer_credits">
+        <p>Developed by Shreyas Pangal | &copy;shreyaspangal.com</p>
+      </div>
     </footer>
   </body>
 </html>
