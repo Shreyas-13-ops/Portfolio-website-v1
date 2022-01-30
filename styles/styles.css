@@ -23,7 +23,7 @@ body {
 }
 main {
   margin: 0px auto;
-  width: 90%;
+  /* width: 90%; */
 }
 a,
 ul,
@@ -56,6 +56,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 .link-primary,
 .link-secondary,
@@ -111,19 +112,19 @@ nav {
 }
 /* header */
 .hero {
-  padding: 4rem;
+  padding: 8rem 0rem;
   display: flex;
+  justify-content: center;
+  gap: 5rem;
 }
 .hero-img {
   display: block;
   max-width: 400px;
-  margin-left: 5rem;
 }
 .hero-heading {
   font-size: 2rem;
   font-weight: normal;
 
-  padding-left: 10rem;
   color: var(--dark-grey);
   text-align: left;
 }
@@ -141,22 +142,24 @@ nav {
   display: inline-block;
   font-size: 1.3rem;
   color: var(--offset-blue);
-  width: 75%;
+  width: 60%;
   margin-top: .8rem;
 }
 /* sections */
 .section {
   padding: 2rem;
   font-size: 115%;
+  padding: 7rem;
 }
 .section h2 {
   text-align: center;
   color: var(--offset-blue);
   font-size: 180%;
+  padding-bottom: 2rem;
 }
 .off-white-section {
   background-color: var(--off-white);
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }
 /* footer */
 footer {
@@ -206,9 +209,6 @@ footer ul li:hover a {
   .hero-img{
     display: none;
   }
-  .hero-heading{
-    padding: 0;
-  }
 }
 
 /* MEDIA QUERIES FOR 695 MAX */
@@ -222,10 +222,9 @@ footer ul li:hover a {
 /* MEDIA QUERIES FOR 630 MAX */
 @media screen and (max-width: 630px) {
   .hero {
-    padding: 0;
-  }
-  .hero-img {
-    display: none;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 0;
   }
   .author-bio {
     display: inline-block;
@@ -233,7 +232,7 @@ footer ul li:hover a {
     margin-top: 0.5rem;
   }
   .section {
-    padding: 2rem 0.5rem;
+    padding: 4rem 1rem;
   }
 }
 
@@ -289,9 +288,7 @@ footer ul li:hover a {
     display: flex;
     justify-content: space-between;
   }
-  /* .nav-list li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+  .hero-heading{
+    padding-left: 2.5rem;
+  }
 }
