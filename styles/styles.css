@@ -1,25 +1,32 @@
+/* Open Sans Font */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&display=swap");
+
+/* Playfair Display Font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap");
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 :root {
   /* main colors */
-  --dark-blue: #002D62;
-  --primary-color: #00308F;
+  --dark-blue: #002d62;
+  --primary-color: #00308f;
   --secondary-color: #3b82f6;
   /* other colors */
   --offset-blue: #2c3968;
   --dark-grey: #6b7280;
   --off-white: #f1edff;
   --yellow-color: #ffe162;
+  /* Fonts */
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-secondary: 'Playfair Display', serif;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-primary);
 }
 main {
   margin: 0px auto;
@@ -120,6 +127,7 @@ nav {
 .hero-img {
   display: block;
   max-width: 400px;
+  border-radius: 50%;
 }
 .hero-heading {
   font-size: 2rem;
@@ -133,7 +141,8 @@ nav {
   display: block;
   padding: 1.3rem 0rem;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 500;
+  font-family: var(--ff-secondary);
 }
 .author-work {
   font-weight: 500;
@@ -142,8 +151,8 @@ nav {
   display: inline-block;
   font-size: 1.3rem;
   color: var(--offset-blue);
-  width: 60%;
-  margin-top: .8rem;
+  width: 50ch;
+  margin-top: 0.8rem;
 }
 /* sections */
 .section {
@@ -156,6 +165,7 @@ nav {
   color: var(--offset-blue);
   font-size: 180%;
   padding-bottom: 2rem;
+  text-transform: uppercase;
 }
 .off-white-section {
   background-color: var(--off-white);
@@ -198,16 +208,17 @@ footer ul li:hover a {
   word-spacing: 0.1rem;
   letter-spacing: 0.1rem;
 }
-.footer_credits{
+.footer_credits {
   background-color: var(--dark-blue);
   width: 100%;
   padding: 1rem 0;
 }
 
-/* MEDIA QUERIES FOR 695 MAX */
-@media screen and (max-width: 1000px){
-  .hero-img{
-    display: none;
+/* MEDIA QUERIES FOR 1000 MAX */
+@media screen and (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -217,20 +228,13 @@ footer ul li:hover a {
     display: flex;
     flex-direction: column;
   }
+  .hero-img{
+    max-width: 250px;
+  }
 }
 
 /* MEDIA QUERIES FOR 630 MAX */
 @media screen and (max-width: 630px) {
-  .hero {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    padding-left: 0;
-  }
-  .author-bio {
-    display: inline-block;
-    width: 350px;
-    margin-top: 0.5rem;
-  }
   .section {
     padding: 4rem 1rem;
   }
@@ -244,11 +248,10 @@ footer ul li:hover a {
     right: 0;
     width: 100%;
     font-size: 0.8rem;
-    padding-left: 2rem;
     padding-bottom: 1.3rem;
   }
-  .nav-list{
-    margin-top: 1.3rem;
+  .nav-list {
+    margin-top: 1.2rem;
     padding: 0;
   }
   main {
@@ -282,13 +285,10 @@ footer ul li:hover a {
     border-bottom: unset;
   }
 }
-@media screen and (max-width: 380px){
-  nav{
-    padding: .3rem 0;
+@media screen and (max-width: 380px) {
+  nav {
+    padding: .7rem 0;
     display: flex;
     justify-content: space-between;
-  }
-  .hero-heading{
-    padding-left: 2.5rem;
   }
 }
