@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&display=swap");
 
 /* Playfair Display Font */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap"); */
 
 *,
 *::before,
@@ -122,7 +122,8 @@ nav {
   padding: 8rem 0rem;
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  align-items: center;
+  gap: 1rem;
 }
 .hero-img {
   display: block;
@@ -141,18 +142,18 @@ nav {
   display: block;
   padding: 1.3rem 0rem;
   font-size: 3rem;
-  font-weight: 500;
-  font-family: var(--ff-secondary);
+  font-weight: 700;
+  font-family: var(--ff-primary);
 }
-.author-work {
+.author-work, .author-bio{
   font-weight: 500;
+  color: var(--offset-blue);
+  font-weight: 500;
+  font-size: 1.8rem;
 }
 .author-bio {
   display: inline-block;
-  font-size: 1.3rem;
-  color: var(--offset-blue);
   width: 50ch;
-  margin-top: 0.8rem;
 }
 /* sections */
 .section {
@@ -166,6 +167,8 @@ nav {
   font-size: 180%;
   padding-bottom: 2rem;
   text-transform: uppercase;
+  font-family: var(--ff-secondary);
+  letter-spacing: 5px;
 }
 .off-white-section {
   background-color: var(--off-white);
@@ -219,6 +222,11 @@ footer ul li:hover a {
   .hero {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .hero-heading {
+    text-align: center;
   }
 }
 
@@ -261,6 +269,7 @@ footer ul li:hover a {
   /* Hero section begins */
   .hero-heading {
     font-size: 1.5rem;
+    text-align: left;
   }
   .author-name {
     font-size: 2rem;
@@ -270,7 +279,7 @@ footer ul li:hover a {
     font-size: 1.3rem;
   }
   .author-bio {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     max-width: 340px;
   }
   /* Hero section ends */
