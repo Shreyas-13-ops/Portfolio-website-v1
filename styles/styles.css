@@ -199,11 +199,7 @@ footer .social-links a {
   display: block;
   padding: 0rem 0rem 0.3rem 0rem;
   font-size: 110%;
-}
-footer ul li:hover a {
   cursor: pointer;
-  border-bottom: 1px solid var(--yellow-color);
-  color: var(--yellow-color);
 }
 .footer-header {
   font-weight: bolder;
