@@ -23,7 +23,7 @@
   --yellow-color: #ffe162;
   /* Fonts */
   --ff-primary: "Open Sans", sans-serif;
-  --ff-secondary: 'Playfair Display', serif;
+  --ff-secondary: "Playfair Display", serif;
 }
 body {
   font-family: var(--ff-primary);
@@ -50,7 +50,8 @@ p {
   padding: 0rem 1rem;
 }
 .container-center {
-  max-width: 500px;
+  max-width: 480px;
+  width: 80%;
   margin: auto;
 }
 /* links */
@@ -78,7 +79,7 @@ p {
   /* for space between 2 links */
   margin-right: 1.5rem;
 
-  box-shadow: -.5rem .5rem 0px var(--offset-blue);
+  box-shadow: -0.5rem 0.5rem 0px var(--offset-blue);
   transition: box-shadow 500ms ease;
 }
 .link-primary:hover {
@@ -133,12 +134,11 @@ nav {
   display: block;
   max-width: 400px;
   border-radius: 50%;
-  box-shadow: -1rem -.5rem 0px var(--offset-blue);
+  box-shadow: -1rem -0.5rem 0px var(--offset-blue);
   transition: box-shadow 500ms ease;
 }
-.hero-img:hover{
+.hero-img:hover {
   box-shadow: 0rem 0rem 0px var(--offset-blue);
-
 }
 .hero-heading {
   font-size: 2rem;
@@ -155,7 +155,8 @@ nav {
   font-weight: 700;
   font-family: var(--ff-primary);
 }
-.author-work, .author-bio{
+.author-work,
+.author-bio {
   font-weight: 500;
   color: var(--offset-blue);
   font-weight: 500;
@@ -170,13 +171,14 @@ nav {
   font-size: 115%;
   padding: 7rem;
 }
-.section p{
+.section p {
   font-weight: 500;
 }
 .section h2 {
   text-align: center;
   color: var(--offset-blue);
   font-size: 180%;
+  font-weight: 900;
   padding-bottom: 2rem;
   text-transform: uppercase;
   font-family: var(--ff-secondary);
@@ -184,28 +186,35 @@ nav {
 }
 .off-white-section {
   background-color: var(--off-white);
-  /* border-radius: 1rem; */
 }
-.project_title{
+.skills_title {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 110%;
 }
-.about_para a{
+.skills_images {
+  display: flex;
+  flex-basis: 250px;
+  flex-wrap: wrap;
+}
+.skills_images > img {
+  margin: 1rem;
+  display: block;
+  flex: 1;
+}
+.about_para a {
   color: var(--offset-blue);
   border-bottom: 1px solid #002d62;
 }
-.about_para a:hover{
+.about_para a:hover {
   border: none;
   color: var(--secondary-color);
 }
-.about_para > p, .skills_para > p{
+.about_para > p,
+.skills_para > p {
   padding-bottom: 1rem;
 }
-.about_para > p{
-  width: 90%;
-  margin: auto;
-}
+
 /* footer */
 footer {
   background-color: var(--primary-color);
@@ -226,13 +235,13 @@ footer .social-links {
 footer .social-links a {
   color: white;
   display: block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 110%;
   cursor: pointer;
 }
 footer .social-links a:hover {
   background-color: var(--secondary-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 .footer-header {
   font-weight: bolder;
@@ -257,8 +266,8 @@ footer .social-links a:hover {
   .hero-heading {
     text-align: center;
   }
-  .link-primary{
-  box-shadow: 0rem 0rem 0px var(--offset-blue);
+  .link-primary {
+    box-shadow: 0rem 0rem 0px var(--offset-blue);
   }
 }
 
@@ -268,7 +277,7 @@ footer .social-links a:hover {
     display: flex;
     flex-direction: column;
   }
-  .hero-img{
+  .hero-img {
     max-width: 250px;
   }
 }
@@ -328,7 +337,7 @@ footer .social-links a:hover {
 }
 @media screen and (max-width: 380px) {
   nav {
-    padding: .7rem 0;
+    padding: 0.7rem 0;
     display: flex;
     justify-content: space-between;
   }

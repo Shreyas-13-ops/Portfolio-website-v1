@@ -37,7 +37,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
-  /* margin: 2rem auto; */
   margin-block: 2rem;
 
   padding: 0.5rem;
@@ -54,7 +53,8 @@ footer img{
   display: inline;
 }
 .project-link:hover img {
-  opacity: 50%;
+  opacity: 70%;
+  transform: scale(1.1);
 }
 
 .card {
@@ -66,6 +66,10 @@ footer img{
   border-radius: 1em;
   background: #ece9e6;
   background: linear-gradient(to right, #ffffff, #ece9e6);
+  overflow: hidden;
+}
+
+.card__header{
   overflow: hidden;
 }
 
@@ -87,19 +91,19 @@ footer img{
 .tag + .tag {
   margin-left: 0.5em;
 }
-
+/* Travel color */
 .tag-blue {
   background: #56ccf2;
   background: linear-gradient(to bottom, #2f80ed, #56ccf2);
   color: #fafafa;
 }
-
+/* Fun color */
 .tag-brown {
   background: #d1913c;
   background: linear-gradient(to bottom, #ffd194, #d1913c);
   color: #fafafa;
 }
-
+/* Finance color */
 .tag-green {
   background: #12EB3F;
   background: linear-gradient(
@@ -136,12 +140,12 @@ footer img{
   color: black;
   padding-right: 2rem;
   transition: all 250ms ease;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 .user:hover{
   color: green;
   border-radius: 5rem;
-  border: 1px solid #d1913c;
+  border: 2px solid #d1913c;
 }
 
 .user__image {
