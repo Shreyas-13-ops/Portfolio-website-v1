@@ -50,6 +50,9 @@ img {
   object-fit: cover;
   transition: all 500ms ease;  
 }
+footer img{
+  display: inline;
+}
 .project-link:hover img {
   opacity: 50%;
 }
