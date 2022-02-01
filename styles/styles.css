@@ -134,11 +134,6 @@ nav {
   display: block;
   max-width: 400px;
   border-radius: 50%;
-  box-shadow: -1rem -0.5rem 0px var(--offset-blue);
-  transition: box-shadow 500ms ease;
-}
-.hero-img:hover {
-  box-shadow: 0rem 0rem 0px var(--offset-blue);
 }
 .hero-heading {
   font-size: 2rem;
@@ -231,7 +226,6 @@ footer .social-links {
   display: flex;
   justify-content: center;
 }
-
 footer .social-links a {
   color: white;
   display: block;
@@ -253,6 +247,10 @@ footer .social-links a:hover {
   background-color: var(--dark-blue);
   width: 100%;
   padding: 1rem 0;
+}
+.contact-form {
+  margin-top: 3rem;
+  width: 100%;
 }
 
 /* MEDIA QUERIES FOR 1000 MAX */
