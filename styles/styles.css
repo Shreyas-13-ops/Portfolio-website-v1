@@ -182,9 +182,11 @@ nav {
 .off-white-section {
   background-color: var(--off-white);
 }
+
+/* Skills section */
 .skills_title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 110%;
 }
 .skills_images {
@@ -192,11 +194,40 @@ nav {
   flex-basis: 250px;
   flex-wrap: wrap;
 }
-.skills_images > img {
-  margin: 1rem;
-  display: block;
-  flex: 1;
+.skills_top{
+  margin: 0 auto;
+  font-size: 600%;
+  display: flex;
+  gap: 3.8rem;
 }
+.skills_bottom{
+  font-size: 500%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 3.5rem;
+}
+/* Skills section color */
+.fa-html5{
+  color: #F06529;
+}
+.fa-css3-alt{
+  color: #1C78C0;
+}
+.fa-js{
+  color: #ebc700;
+}
+.fa-bootstrap{
+  color: #563d73;
+}
+.fa-git{
+  color: #F1502F;
+}
+.fa-github{
+  color: #211F1F;
+}
+
 .about_para a {
   color: var(--offset-blue);
   border-bottom: 1px solid #002d62;
