@@ -80,6 +80,9 @@ footer img{
   gap: 0.5rem;
   color: black;
 }
+.card__body p{
+  width: 90%;
+}
 
 .tag {
   align-self: flex-start;
