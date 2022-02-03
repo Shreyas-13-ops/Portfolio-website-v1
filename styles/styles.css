@@ -111,9 +111,19 @@ nav {
   align-items: center;
 }
 .nav-name {
-  font-weight: bold;
-  font-size: 2rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-name .fa-linkedin, .nav-name .fa-github{
+  font-size: 2.5rem;
   color: white;
+  transition: all .5s;
+}
+.nav-name .fa-linkedin:hover, .nav-name .fa-github:hover{
+  opacity: .7;
+  transform: rotate(10deg)
 }
 .nav-list li a {
   color: white;
