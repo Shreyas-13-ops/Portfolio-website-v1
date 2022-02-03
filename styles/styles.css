@@ -112,12 +112,13 @@ nav {
 }
 .nav-name {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
 }
 .nav-list li a {
   color: white;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 .nav-list li a:hover {
   color: var(--yellow-color);
@@ -189,43 +190,42 @@ nav {
   margin-bottom: 2rem;
   font-size: 110%;
 }
-.skills_images {
-  display: flex;
-  flex-basis: 250px;
-  flex-wrap: wrap;
-}
-.skills_top{
-  margin: 0 auto;
-  font-size: 600%;
+.skills_top,
+.skills_middle,
+.skills_bottom {
   display: flex;
   gap: 3.8rem;
-}
-.skills_bottom{
-  font-size: 500%;
-  margin: 0 auto;
   margin-top: 1.5rem;
-  margin-bottom: 3rem;
-  display: flex;
-  gap: 3.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+.skills_top {
+  font-size: 700%;
+}
+.skills_middle {
+  font-size: 600%;
+}
+.skills_bottom {
+  font-size: 500%;
 }
 /* Skills section color */
-.fa-html5{
-  color: #F06529;
+.fa-html5 {
+  color: #f06529;
 }
-.fa-css3-alt{
-  color: #1C78C0;
+.fa-css3-alt {
+  color: #1c78c0;
 }
-.fa-js{
+.fa-js {
   color: #ebc700;
 }
-.fa-bootstrap{
+.fa-bootstrap {
   color: #563d73;
 }
-.fa-git{
-  color: #F1502F;
+.fa-git {
+  color: #f1502f;
 }
-.fa-github{
-  color: #211F1F;
+.fa-github {
+  color: #211f1f;
 }
 
 .about_para a {
@@ -286,7 +286,7 @@ footer .social-links a:hover {
 
 /* MEDIA QUERIES FOR 1000 MAX */
 @media screen and (max-width: 1000px) {
-  .nav{
+  .nav {
     position: fixed;
     right: 0;
   }
